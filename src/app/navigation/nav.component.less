@@ -1,0 +1,36 @@
+.navbar {
+    border-radius: 0;
+    border-bottom: none;
+    &-inverse {
+      background-color: #e65100;
+    }
+    &-brand {
+      padding: 10px 15px;
+      img {
+        width: 145px;
+      }
+    }
+    &-nav {
+      li {
+        a {
+          color: #fff;
+          &:focus, &:hover {
+            background-color: #e2400b;
+          }
+        }
+        &.active {
+          a {
+            background-color: #e2400b;
+          }
+        }
+      }
+      .dropdown-menu {
+        a {
+          color: #000;
+          &:focus, &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+}
